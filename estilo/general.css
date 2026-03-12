@@ -10,4 +10,60 @@
 h1, h2, h3, p, li, a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
+}
+.imagen-historia{
+    text-align: center;
+    margin-top: 30px;
+}
+.imagen-historia img{
+    width: 600px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.imagen-historia:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.escudo img{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.escudo img{
+    width: 80px;
+    filter: drop-shadow(0px, 5px, 10px black);
+
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-10px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-5px); }
+    100% { transform: translateY(0); }    
+}
+.escudo img{
+    width: 80px;
+    animation: bounce 2s infinite;
+}
+h1{
+    margin-left: 120px;
+    text-align: center;
+}
+.caja{
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.6);
+}
+.caja:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+nav :hover{
+    background: #a50044;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
