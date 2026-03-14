@@ -3,7 +3,7 @@ Proyecto HTML - FC Barcelona
 
 Integrantes:
 Juan Esteban Mancipe Pamplona - 55824023
-David
+Nelson David Martinez Guzman - 55825004
 
 Páginas:
 - Inicio
