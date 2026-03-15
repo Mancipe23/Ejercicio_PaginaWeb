@@ -11,6 +11,79 @@ h1, h2, h3, p, li, a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.cuadrado1{
+    width: 96vw;
+    height: 89px;
+    border: 4px black;
+    background-color: #000000;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    color: white;         
+    font-family: sans-serif;
+    opacity: 80%;
+    flex-direction: row;
+    gap: 30px;               
+}
+.cuadrado1 a:hover {
+    color: #ffed00;          
+}
+
+.imagenlewan{
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;       
+    flex-direction: row;    
+    align-items: center;    
+    gap: 40px;              
+    margin: 50px auto;      
+    max-width: 1200px;      
+    padding: 0 20px;
+ }
+ .texto-bienvenida {   
+    color: white;           
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    border-left: 5px solid #a50044; 
+}
+
+.texto-bienvenida h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    color: #ffed00;         
+}
+
+.texto-bienvenida p {
+    font-size: 1.2rem;
+    line-height: 1.6;       
+}
+.Barcelona{
+    font-size: 30px;
+}
+.estadio{
+    border: 8px solid #000000;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    display: inline-block;
+}
+.estadio:hover{
+    scale: 1.05;
+    filter: brightness(40%);
+}
+.titulo-estadio {
+    position: absolute; 
+    top: 50%;          
+    left: 50%;         
+    transform: translate(-50%, -50%);        
+    transition: all 0.5s ease;
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-size-adjust: 100px;
+}
+.estadio:hover .texto-estadio {
+    opacity: 1;         
+}
 .imagen-historia{
     text-align: center;
     margin-top: 30px;
@@ -35,17 +108,7 @@ h1, h2, h3, p, li, a {
     filter: drop-shadow(0px, 5px, 10px black);
 
 }
-@keyframes bounce {
-    0%   { transform: translateY(0); }
-    30%  { transform: translateY(-10px); }
-    50%  { transform: translateY(0); }
-    70%  { transform: translateY(-5px); }
-    100% { transform: translateY(0); }    
-}
-.escudo img{
-    width: 80px;
-    animation: bounce 2s infinite;
-}
+
 h1{
     margin-left: 120px;
     text-align: center;
@@ -66,4 +129,5 @@ nav :hover{
     background: #a50044;
     transform: translateX(5px);
     transition: 0.3s;
+    opacity: 80%;
 }
