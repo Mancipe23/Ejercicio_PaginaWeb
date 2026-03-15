@@ -23,8 +23,14 @@ h1, h2, h3, p, li, a {
     font-family: sans-serif;
     opacity: 80%;
     flex-direction: row;
-    gap: 30px;               
+    gap: 30px;       
+    .escudo{
+        position: absolute;
+         top: 20px;
+         left: 40px;
+    }      
 }
+
 .cuadrado1 a:hover {
     color: #ffed00;          
 }
@@ -61,12 +67,19 @@ h1, h2, h3, p, li, a {
     font-size: 30px;
 }
 .estadio{
+    position: relative;
+    width: fit-content;
     border: 8px solid #000000;
-    transition: all 0.5s ease;
     overflow: hidden;
     display: inline-block;
+
 }
-.estadio:hover{
+.estadio img {
+    display: block;
+    width: 100%; 
+    transition: all 0.5s ease;
+}
+.estadio:hover img{
     scale: 1.05;
     filter: brightness(40%);
 }
@@ -76,12 +89,12 @@ h1, h2, h3, p, li, a {
     left: 50%;         
     transform: translate(-50%, -50%);        
     transition: all 0.5s ease;
+    opacity: 0;
     color: white;
     text-align: center;
     width: 100%;
-    text-size-adjust: 100px;
 }
-.estadio:hover .texto-estadio {
+.estadio:hover .titulo-estadio {
     opacity: 1;         
 }
 .imagen-historia{
@@ -97,11 +110,6 @@ h1, h2, h3, p, li, a {
 .imagen-historia:hover{
     transform: scale(1.02);
     transition: 0.3s;
-}
-.escudo img{
-    position: fixed;
-    top: 20px;
-    left: 20px;
 }
 .escudo img{
     width: 80px;
