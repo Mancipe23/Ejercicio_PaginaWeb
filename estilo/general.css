@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -234,7 +234,7 @@ h1{
     text-align: center;
     padding: 15px;
     background-color: #fff;
-    transition: transform 0.3s;
+    transition:  all transform 0.3s;
     h3, p{
         color: #000000;
     }
@@ -248,4 +248,51 @@ h1{
 .producto:hover{
     transform: scale(1.02);
     transition: 0.3s;
+}
+.bannercat{
+    width: 100%;       
+    overflow: hidden;  
+    line-height: 0;
+    display: block;
+}
+.titulocat{
+    font-size: 27px;
+    text-decoration: dotted;
+    box-shadow: #000000;
+    h1{
+        color: #f1bd00;
+    }
+
+}
+.textoexplicativo{
+    font-size: 19px;
+    text-align: justify;
+    padding: 0 10%;
+    p {color: #f1bd00;
+}
+ }
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.fotos{
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    height: 250px;
+}
+.fotos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+}
+.fotos:hover img {
+    transform: scale(1.2) rotate(2deg); 
+    filter: brightness(1.1); 
+}
+.titulo_galeria{
+    text-align: center;
 }
