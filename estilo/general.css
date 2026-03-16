@@ -11,6 +11,7 @@ h1, h2, h3, p, li, a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ---------------- HISTORIA ---------------- */
 .imagen-historia{
     text-align: center;
     margin-top: 30px;
@@ -26,9 +27,11 @@ h1, h2, h3, p, li, a {
     transition: 0.3s;
 }
 .escudo img{
+    width: 90px;
     position: fixed;
     top: 20px;
     left: 20px;
+    z-index: 10;
 }
 .escudo img{
     width: 80px;
@@ -62,8 +65,147 @@ h1{
     transform: scale(1.02);
     transition: 0.3s;
 }
-nav :hover{
-    background: #a50044;
-    transform: translateX(5px);
-    transition: 0.3s;
+nav{
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+nav ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+nav li{
+    display:inline-block;
+    margin:10px 20px;
+}
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* ---------------- PALMARES ---------------- */
+
+h1{
+    text-align:center;
+    font-size:40px;
+    margin-top:20px;
+    text-shadow:2px 2px 10px black;
+}
+.titulo-seccion{
+    text-align:center;
+    font-size:28px;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+.tabla-palmares table{
+    width:70%;
+    margin:20px auto;
+    border-collapse:collapse;
+    font-size:18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.tabla-palmares th{
+    background:#a50044;
+    color:white;
+    padding:12px;
+    border:1px solid #ddd;
+}
+.tabla-palmares td{
+    background:rgba(255,255,255,0.9);
+    color:black;
+    padding:12px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+.tabla-palmares tr:hover{
+    background:#d6d6d6;
+    transition:0.3s;
+}
+.imagen-palmares{
+    text-align: center;
+    margin: 30px;
+}
+tr:hover{
+    background-color:#d6d6d6;
+    transition:0.3s;
+}
+.titulo-seccion{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+}
+h1{
+    text-align:center;
+    font-size:40px;
+    text-shadow:2px 2px 10px black;
+}
+.tabla-palmares{
+    margin-bottom:40px;
+}
+.tabla-palmares{
+    animation: aparecer 1s ease;
+}
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* ---------------- JUGADORES ---------------- */
+
+.contenedor-jugadores{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:30px;
+    padding:30px;
+    margin-top:30px;
+}
+
+h1{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+.tarjeta{
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    padding:20px;
+    transition:0.3s;
+}
+
+.tarjeta:hover{
+    border:3px solid transparent;
+    background:
+    linear-gradient(white,white) padding-box,
+    linear-gradient(45deg,#a50044,#004d98) border-box;
+}
+.tarjeta img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:transform 0.4s;
+}
+.tarjeta:hover img{
+    transform:scale(1.1);
+}
+.tarjeta h3{
+    color: #111;
+    font-weight: bold;
+}
+.tarjeta p{
+    color: #333
 }
