@@ -414,3 +414,31 @@ h1{
 .tarjeta p{
     color: #333
 }
+.tarjeta p strong{
+color:#f1bd00;
+}
+.titulo-seccion{
+    text-align:center;
+    font-size:28px;
+    margin-top:50px;
+    margin-bottom:20px;
+    color:#ffcc00;
+}
+.titulo-seccion::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:3px;
+    background:#ffcc00;
+    margin:10px auto;
+}
+.tarjeta{
+    width:220px;
+}
+.contenedor-jugadores{
+    text-align:center;
+}
+.tarjeta{
+    display:inline-block;
+    margin:15px;
+}
